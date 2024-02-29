@@ -74,7 +74,22 @@ class CustomStack {
             System.out.println("Stack is empty!!!");
             return -1;
         }
+        /*
+        * data[pointer--] means first it will return the value at the pointer and then decrement
+        * data[--pointer] means first it will rdecrement the value of the pointern and then return the value
+        */
         return data[pointer--];
+    }
+
+    /*
+     * peek method doesnot remove the element it just shows which element is at the top.
+     */
+    public int peek() {
+        if(isEmpty()) {
+            System.out.println("Stack is empty!!!");
+            return -1;
+        }
+        return data[pointer];
     }
 
 
